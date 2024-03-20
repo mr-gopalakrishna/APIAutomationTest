@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="All Test Suite">
+    <test verbose="2" preserve-order="true" name="C:/Users/grajpurohit/Projects/restAssured_test">
+        <classes>
+            <class name="api.test.CartTests">
+                <methods>
+                    <include name="testCreateCart"/>
+                    <include name="testAddItemtoCart"/>
+                    <include name="testGetACart"/>
+                    <include name="testGetCartItem"/>
+                    <include name="testModifyCartItem"/>
+                    <include name="testReplaceCartItem"/>
+                    <exclude name="testDeleteCartItem"/>
+                </methods>
+            </class>
+            <class name="api.test.OrdersTests">
+                <methods>
+                    <include name="testgetAccessToken"/>
+                    <include name="testCreateNewOrder"/>
+                    <include name="testUpdateOrder"/>
+                    <include name="testgetAllOrders"/>
+                    <include name="testDeleteOrder"/>
+                </methods>
+            </class>
+            <class name="api.test.ProductsTests">
+                <methods>
+                    <include name="testGetAllProducts"/>
+                    <include name="testGetAProduct"/>
+                </methods>
+            </class>
+            <class name="api.test.StatusTests">
+                <methods>
+                    <include name="testStatusCheck"/>
+                </methods>
+            </class>
+        </classes>
+    </test>
+</suite>
